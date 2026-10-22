@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Conditions d'utilisation · coupénet</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
+<style>
+  /* Mise en page : une seule colonne de lecture, deux documents ancrés, sommaire en tête. */
+  :root {
+    --bg: #faf7f3; --surface: #ffffff; --ink: #1c1814; --muted: #6b625a; --line: #e7dfd6;
+    --accent: #c2410c; --accent-ink: #9a3412;
+    --display: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+    --body: "Source Serif 4", Georgia, "Times New Roman", serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) { --bg: #16130f; --surface: #1f1b17; --ink: #efe9e2; --muted: #a59a8e;
+      --line: #342d26; --accent: #fb923c; --accent-ink: #fdba74; color-scheme: dark; }
+  }
+  :root[data-theme="dark"] { --bg: #16130f; --surface: #1f1b17; --ink: #efe9e2; --muted: #a59a8e;
+    --line: #342d26; --accent: #fb923c; --accent-ink: #fdba74; color-scheme: dark; }
+  body { background: var(--bg); color: var(--ink); font: 17px/1.65 var(--body); }
+  .wrap { max-width: 44rem; margin: 0 auto; padding-block: 40px 64px;
+          padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+  header { display: flex; gap: 16px; align-items: center; }
+  header img { width: 56px; height: 56px; border-radius: 50%; flex: none; }
+  h1, h2, h3 { font-family: var(--display); line-height: 1.2; text-wrap: balance; }
+  h1 { font-size: 1.9rem; margin: 0; letter-spacing: -0.01em; }
+  .sub { margin: 4px 0 0; color: var(--muted); font-size: 0.95rem; }
+  nav { display: flex; flex-wrap: wrap; gap: 8px; margin: 28px 0 8px; }
+  nav a { font: 600 0.9rem var(--display); color: var(--accent-ink); text-decoration: none; border: 1px solid var(--line);
+          background: var(--surface); padding: 6px 12px; border-radius: 999px; }
+  nav a:hover, nav a:focus-visible { border-color: var(--accent); outline: none; }
+  section { margin-top: 44px; scroll-margin-top: 16px; }
+  h2 { font-size: 1.45rem; margin: 0 0 4px; }
+  .meta { font-size: 0.85rem; color: var(--muted); margin: 0 0 18px; letter-spacing: 0.02em; }
+  h3 { font-size: 1.05rem; margin: 26px 0 6px; }
+  p, li { margin: 0 0 10px; }
+  ul { padding-left: 1.2rem; margin: 0 0 10px; }
+  a { color: var(--accent-ink); }
+  .en { margin-top: 28px; padding: 18px 20px; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; font-size: 0.95rem; }
+  .en h3 { margin-top: 0; }
+  footer { margin-top: 56px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.85rem; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <img src="data:image/png;base64,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" alt="Logo coupénet">
+    <div>
+      <h1>coupénet</h1>
+      <p class="sub">Outil personnel de publication de Shorts · YouTube et TikTok</p>
+    </div>
+  </header>
+  <nav aria-label="Pages"><a href="index.html">Accueil</a> <a href="conditions.html">Conditions d'utilisation</a> <a href="confidentialite.html">Politique de confidentialité</a></nav>
+  <section id="conditions">
+    <h2>Conditions d'utilisation</h2>
+    <p class="meta">En vigueur au 22 octobre 2026</p>
+
+    <h3>Ce qu'est coupénet</h3>
+    <p>coupénet est un outil logiciel privé, utilisé uniquement par l'exploitant des comptes « coupénet » sur YouTube et TikTok. Il découpe des vidéos longues dont l'exploitant détient les droits en extraits verticaux courts, puis les envoie sur ses propres comptes : sur YouTube, en vidéos privées programmées ; sur TikTok, en brouillons dans la boîte de réception du compte, publiés ensuite à la main depuis l'application.</p>
+
+    <h3>Qui peut l'utiliser</h3>
+    <p>L'outil n'est ni vendu ni proposé au public. Aucun autre utilisateur ne peut s'y inscrire ni y connecter son compte.</p>
+
+    <h3>Contenus</h3>
+    <p>L'exploitant publie uniquement des extraits de vidéos sur lesquelles il détient les droits, et reste seul responsable des contenus publiés. Chaque publication respecte les règles de la communauté YouTube et TikTok.</p>
+
+    <h3>Plateformes tierces</h3>
+    <p>L'outil utilise les services d'API YouTube et l'API Content Posting de TikTok. Leur usage est soumis aux <a href="https://www.youtube.com/t/terms" rel="noopener">conditions d'utilisation de YouTube</a> et aux <a href="https://www.tiktok.com/legal/page/eea/terms-of-service/fr" rel="noopener">conditions d'utilisation de TikTok</a>.</p>
+
+    <h3>Modifications</h3>
+    <p>Ces conditions peuvent évoluer ; la date d'entrée en vigueur ci-dessus est alors mise à jour.</p>
+
+    <div class="en" lang="en">
+      <h3>Terms of Service (English summary)</h3>
+      <p>coupénet is a private, single-user tool operated by the owner of the coupénet YouTube and TikTok accounts. It cuts long videos the owner holds the rights to into short vertical clips and uploads them to the owner's own accounts only: as scheduled private videos on YouTube, and as drafts in the TikTok inbox, which the owner then reviews and posts manually in the TikTok app. It is not offered to the public and no other account can be connected. Use of YouTube API Services and the TikTok Content Posting API is subject to the YouTube Terms of Service and the TikTok Terms of Service.</p>
+    </div>
+  </section>
+  <footer>coupénet · outil personnel, non commercial</footer>
+</div>
+</body>
+</html>
